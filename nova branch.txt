@@ -1,0 +1,37 @@
+Fazer inscrição no Github
+
+git add .
+
+git commit -m "mensagem"
+
+git branch -M "novo nome"
+
+git remote add origin _link do repositório_
+
+git push -u origin main
+
+git checkout -b "nova branch"
+
+git merge _nome da branch_
+
+git pull
+Gustavo Siqueira20:57
+git add .
+
+git commit -m "mensagem"
+
+git branch -M "novo nome"
+
+git remote add origin _link do repositório_
+
+git push -u origin main
+
+git checkout -b "nova_branch"
+
+git merge _nome da branch_
+
+git pull
+huan carlos20:59
+coloca assim
+"nova_branch
+"nova_branch"
