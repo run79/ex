@@ -1,0 +1,268 @@
+Microsoft Windows [versão 10.0.19042.1052]
+(c) Microsoft Corporation. Todos os direitos reservados.
+
+C:\Users\Acer>cd..
+
+C:\Users>cd..
+
+C:\>cd repo
+
+C:\repo>cd instalacao
+
+C:\repo\instalacao>cd ex
+
+C:\repo\instalacao\ex>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   LI/codigo.txt.txt
+        new file:   codigo.txt.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   codigo.txt.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        redime.txt.txt
+
+
+C:\repo\instalacao\ex>git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+C:\repo\instalacao\ex>git add..
+git: 'add..' is not a git command. See 'git --help'.
+
+C:\repo\instalacao\ex>git add ..
+fatal: ..: '..' is outside repository at 'C:/repo/instalacao/ex'
+
+C:\repo\instalacao\ex>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   LI/codigo.txt.txt
+        new file:   codigo.txt.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   codigo.txt.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        redime.txt.txt
+
+
+C:\repo\instalacao\ex>git add .
+
+C:\repo\instalacao\ex>git commit -m "adicionado arquivo redmed"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Acer@DESKTOP-SRHNL00.(none)')
+
+C:\repo\instalacao\ex>git branch -M "MAIN"
+
+C:\repo\instalacao\ex>GIT STATUS
+fatal: cannot handle STATUS as a builtin
+
+C:\repo\instalacao\ex>git status
+On branch MAIN
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   LI/codigo.txt.txt
+        new file:   codigo.txt.txt
+        new file:   redime.txt.txt
+
+
+C:\repo\instalacao\ex>git brach -M "main"
+git: 'brach' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+C:\repo\instalacao\ex>git status
+On branch MAIN
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   LI/codigo.txt.txt
+        new file:   codigo.txt.txt
+        new file:   redime.txt.txt
+
+
+C:\repo\instalacao\ex>git status
+On branch MAIN
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   LI/codigo.txt.txt
+        new file:   codigo.txt.txt
+        new file:   redime.txt.txt
+
+
+C:\repo\instalacao\ex>git branch -M "master"
+
+C:\repo\instalacao\ex>git branch -M "main"
+
+C:\repo\instalacao\ex>git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   LI/codigo.txt.txt
+        new file:   codigo.txt.txt
+        new file:   redime.txt.txt
+
+
+C:\repo\instalacao\ex>git remote add origin https://github.com/run79/ex.git
+
+C:\repo\instalacao\ex>git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   LI/codigo.txt.txt
+        new file:   codigo.txt.txt
+        new file:   redime.txt.txt
+
+
+C:\repo\instalacao\ex>git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/run79/ex.git'
+
+C:\repo\instalacao\ex> git commit -m "alteração de arquivos"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Acer@DESKTOP-SRHNL00.(none)')
+
+C:\repo\instalacao\ex>git commit -m "alteracao"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Acer@DESKTOP-SRHNL00.(none)')
+
+C:\repo\instalacao\ex>git config --global user.email "vanity.linebarnabe@gmail.com"
+
+C:\repo\instalacao\ex>git config --global user.name "run79"
+
+C:\repo\instalacao\ex>git commit -m "alteracao"
+[main (root-commit) 7791258] alteracao
+ 3 files changed, 100 insertions(+)
+ create mode 100644 LI/codigo.txt.txt
+ create mode 100644 codigo.txt.txt
+ create mode 100644 redime.txt.txt
+
+C:\repo\instalacao\ex>git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 920 bytes | 306.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/run79/ex.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+C:\repo\instalacao\ex>git checkout -b "nova_branch"
+Switched to a new branch 'nova_branch'
+
+C:\repo\instalacao\ex>git status
+On branch nova_branch
+nothing to commit, working tree clean
+
+C:\repo\instalacao\ex>git status
+On branch nova_branch
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        nova branch.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\repo\instalacao\ex>git add .
+
+C:\repo\instalacao\ex>git status
+On branch nova_branch
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   nova branch.txt
+
+
+C:\repo\instalacao\ex>git commit -m "adicionando arquivo no
+[nova_branch 08ef036] adicionando arquivo no
+ 1 file changed, 37 insertions(+)
+ create mode 100644 nova branch.txt
+
+C:\repo\instalacao\ex>git commit -m "adicionando arquivo novs
+On branch nova_branch
+nothing to commit, working tree clean
+
+C:\repo\instalacao\ex>git commit -m "adicionando arquivo nova_brach"
+On branch nova_branch
+nothing to commit, working tree clean
+
+C:\repo\instalacao\ex>git push origin nova_branch
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 555 bytes | 138.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'nova_branch' on GitHub by visiting:
+remote:      https://github.com/run79/ex/pull/new/nova_branch
+remote:
+To https://github.com/run79/ex.git
+ * [new branch]      nova_branch -> nova_branch
+
+C:\repo\instalacao\ex>
